@@ -1,0 +1,17 @@
+<nav class="nav col-6 mx-auto mb-3">
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+</nav>
+
+<div class="col-6 mx-auto p-0 interval">
+  <h5>Search History</h5>
+  <table class="table">
+    <tr>
+      <th scope="col">Time</th>
+      <th scope="col">Keywords</th>
+    </tr>
+    <tr *ngFor="let record of historyRecords">
+      <td>{{record.timestamp}}</td>
+      <td>{{record.keywords}}</td>
+    </tr>
+  </table>
+</div>
